@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+
+    <style> 
+        
+        body{
+            background: linear-gradient(to right top , #65dfc9,#6cdbeb);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .logoInside{
+            border-radius: 10px;
+        }
+        .box{
+            text-align: center;
+            background: linear-gradient(to top right, #1c6cd4, #20B4F6);
+            color: #ffffff;
+            padding: 5%;
+            margin-top: 50px;
+            margin-left: 25%;
+            border-radius: 2rem;
+            width: 40%;
+        }
+
+        .box-info{
+            margin-top: 100px;
+            text-align: center;
+            background: linear-gradient(to top right, #1c6cd4, #20B4F6);
+            color: #ffffff;
+            margin-left: 25%;
+            border-radius: 2rem;
+            width: 50%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 5px;
+            list-style: none;
+            display : block;
+        }
+        .box-info li {
+            display:inline-block;
+            margin: 10px;
+            position: relative;
+        }
+        .text{
+            background-color: #2A4AEB;
+            background: linear-gradient(to top right, #2A4AEB, #2a4aeb41);
+            color: #ffffff;
+            padding: 5%;
+            margin-left: 25%;
+            border-radius: 1rem;
+            width: 40%;
+        }
+        .input{
+            background-color: white !important;
+        }
+    </style>
+    
+    
+
+</head>
+<body>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
+    
+    
+    <div id="app-6">
+        
+        <div class="box">
+            <p class="text">{{ text1 }}</p>
+            <input class="input" v-model="var1" type="number" value="0" placeholder="Enter a float number">
+            <p class="text">{{ text2 }}</p>
+            <input  class="input" v-model="var2" type="number" value="0" value="0" placeholder="Enter a float number">
+            <p class="text">{{ result }}</p>
+            <button v-on:click="sumvars">Sum</button>
+        </div>
+        
+        <div class="box-info" id="info">
+            <ul style="text-align: left">
+                <li><a href="./PersonalWebsite-2/index.html"><img src="DurmusLogo.png" alt="" width="100px" height="100px" class="logoInside"></a></li>
+                <li>
+                    <p> <strong>Mail      :</strong>  <a href="mailto: durmusikartci@gmail.com">durmusikartci@gmail.com</a> </p>
+                    <p> <strong>Github    :</strong>  <a href="https://github.com/DurmushKartci">DurmushKartcı</a></p>
+                    <p> <strong>Linkedin  :</strong>  <a href="https://www.linkedin.com/in/durmu%C5%9F-kartc%C4%B1-575901208/">Durmuş Kartcı</a> </p>
+                </li>
+            </ul>
+                
+                
+            
+        </div>
+        
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

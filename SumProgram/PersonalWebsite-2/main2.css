@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: "Poppins" , sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top , #881010,#d10e0e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: #881010;
+    font-weight: 600rem;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2{
+    color: #bb0909;
+    font-weight: 1000px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+h3{
+    color: white;
+    padding: 0.5rem;
+    font-weight: 600;
+    opacity: 1;
+    background: linear-gradient(to right top , #881010,#d10e0e);
+    border-radius: 2rem;
+}
+
+/*                BACKGROUND                    */
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1,.circle2{
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.4));
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle1{
+    top: 5%;
+    right: 15%;
+}
+.circle2{
+    bottom: 5%;
+    left: 10%;
+}
+
+/*                      PANEL                    */
+
+
+    /*              DASHBOARD                   */
+    .user img{
+        height: 100px;
+        width: auto;
+    }
+
+    .cardİcon , .discordİcon{
+        font-size: 75px;
+    }
+
+    .dashboard{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.425),rgba(255,255,255,0.2));
+        border-radius: 2rem;
+    }
+
+    .link{
+        display: flex;
+        margin: 2rem 0px;
+        padding: 0.1rem 1rem;
+        letter-spacing: 1.5px;
+        align-items: center;
+    }
+    .link .fas{
+        font-size: 30px;
+        color: #881010;
+    }
+
+    .link h2{
+        font-size: 15px;
+        margin: 0rem 1rem;
+    }
+
+    .skills{
+        flex: 2;
+    }
+
+    .discord {
+        background: linear-gradient(to right top , #881010,#d10e0e);
+        border-radius: 2rem;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        margin: 1rem 1rem;
+        
+    }
+
+    .discord h2{
+        color: white;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+
+    /*                  SKİLLS                  */
+
+    .status{
+        margin-bottom: 0.3rem;
+    }
+
+    .skills{
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        display: flex;
+        background: linear-gradient(to left top ,rgba(255,255,255,0.7),rgba(255,255,255,0.2));
+        padding: 1rem ;
+        margin: 1rem 0rem;
+        border-radius: 1rem;
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+        justify-content: space-between;
+    }
+
+    .card h2{
+        width: 300px;
+    }
+
+    .progress{
+        background: linear-gradient(to right top , #881010,#d10e0e);
+        width: 100%;
+        height: 25%;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+        transition: all ease-in-out 2s;
+
+    }
+
+    .progress::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgb(200, 200, 200);
+        position: absolute;
+        left: 60%;
+        transition: all ease-in-out 2000ms;
+    }
